@@ -1,0 +1,27 @@
+.container{
+    border: solid brown;
+     background-color: khaki;
+    width: 50%;
+   height: 50%;  
+     padding: 10px;
+     left: auto;
+     right:auto;
+     justify-content: center;
+   }
+   .convert{
+   background-color: lightblue;
+   border-radius: 5px;  
+     
+   }
+   
+   h1{
+    text-align: center; 
+    color:brown
+   }
+   body{
+   background-color:beige;
+   left: auto;
+     right:auto;
+     justify-content: center;
+     align-items: center;
+   }
