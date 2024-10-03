@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Validation</title>
-    <link rel="stylesheet" href="Password.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Added Poppins font -->
+    <link rel="stylesheet" href="Password.css"> <!-- Link to external CSS -->
 </head>
 <body>
 
@@ -12,29 +13,36 @@
         <h1>Password Validation</h1>
     </header>
     <hr>
-    <form>
+    <form id="loginForm"> <!-- Added form ID -->
         <table>
-
             <tr>
                 <td>Username</td>
-                <td><input type="text" size="30" minlength="10" maxlength="30" id="uName" required autofocus></td>
+                <td><input type="text" id="username" name="username" placeholder="Enter username" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <!-- Use colspan to span the error message across both columns -->
+                    <small id="usernameError" class="error-message"></small>
+                </td>
             </tr>
 
             <tr>
                 <td>Password</td>
-                <td><input type="password" size="30" minlength="10" maxlength="30" id="pWord" required></td>
+                <td><input type="password" id="password" name="password" placeholder="Enter password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <!-- Use colspan to span the error message across both columns -->
+                    <small id="passwordError" class="error-message"></small>
+                </td>
             </tr>
 
             <tr>
-                <td colspan="2"> <p id="pMsg">Password Validation Message</p></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="Sign In" id="btnSignIn"></td>
+                <td><input type="submit" value="Sign In" id="btnSignIn"></td>
                 <td><input type="reset" value="Reset"></td>
+                <td><small id="successMessage" class="success-message"></small></td>
             </tr>
-
         </table>
     </form>
-    <script src="pWordValidation.js"></script>
+
+    <script src="pWordValidation.js"></script> <!-- Link to external JavaScript -->
 </body>
 </html>
