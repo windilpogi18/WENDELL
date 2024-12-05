@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christmas Letter</title>
+  <style>
+    /* Reset some basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #f0f8ff; /* Soft snowy background color */
+      color: #333;
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Christmas card box */
+    .card {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      width: 80%;
+      max-width: 600px;
+      text-align: left;
+      position: relative;
+      border: 2px solid #d32f2f; /* Red border */
+      background: linear-gradient(135deg, #fff5e1, #ffeb3b); /* Light yellow and gold gradient */
+    }
+
+    /* Header */
+    h1 {
+      font-size: 3em;
+      color: #d32f2f; /* Christmas Red */
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Subheading */
+    h3 {
+      font-size: 1.2em;
+      color: #2c6e49; /* Deep green for Christmas */
+      margin: 15px 0;
+      line-height: 1.5;
+      font-weight: 300;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Add some fun Christmas decorations */
+    .card:before {
+      content: "🎄";
+      font-size: 3em;
+      position: absolute;
+      top: -30px;
+      right: 20px;
+      animation: spin 20s linear infinite;
+    }
+
+    .card:after {
+      content: "❄️";
+      font-size: 2em;
+      position: absolute;
+      bottom: -30px;
+      left: 20px;
+      animation: snow 5s infinite linear;
+    }
+
+    /* Keyframe for spinning Christmas tree */
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Snow falling animation */
+    @keyframes snow {
+      0% {
+        transform: translateY(-100px);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+    }
+
+    /* Final signature styling */
+    .signature {
+      font-size: 1em;
+      font-style: italic;
+      color: #d32f2f;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    /* Add a footer text with a little golden color */
+    footer {
+      font-size: 1.1em;
+      color: brown; /* Golden */
+      margin-top: 30px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Christmas Letter</h1>
+    <h3>Dear Mama Ganda,</h3>
+    <h3>There are no words that could truly capture how much you mean to me. From the very first moment I took my first breath, you have been my guiding light, my protector, and my greatest supporter. The love and warmth you have always given me are treasures I hold close, and I am grateful every single day for you.</h3>
+    <h3>Through every challenge and every joy, you've been by my side, offering wisdom, comfort, and a steady hand. Your strength is something I admire deeply, and I am constantly amazed by your ability to give so much of yourself to those you love. I hope to carry forward the lessons you've taught me in everything I do.
+    </h3>
+    <h3>Mom, I may not always show it, but I appreciate you more than words can express. Thank you for your endless love, your sacrifices, and for always believing in me. I’m proud to be your child, and I will forever cherish the bond we share.</h3>
+
+    <div class="signature">
+      <h3>With all my love,<br> Wendell</h3>
+    </div>
+
+    <footer>Wishing you a Merry Christmas and a Happy New Year!</footer>
+  </div>
+</body>
+
+</html>
